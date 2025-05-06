@@ -6,11 +6,10 @@ import com.mymulya.globaltables.dto.LoginResponse;
 import com.mymulya.globaltables.model.GlobalUser;
 import com.mymulya.globaltables.service.GlobalUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = {"http://35.188.150.92", "http://192.168.0.140:3000", "http://192.168.0.139:3000","https://mymulya.com","http://localhost:3000","http://192.168.0.135:8080","http://192.168.0.135",
+        "http://182.18.177.16"})
 @RestController
 @RequestMapping("/global")
 public class GlobalUserController {
