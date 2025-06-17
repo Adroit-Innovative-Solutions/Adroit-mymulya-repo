@@ -49,8 +49,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t dataquad123/global-repo-dev:${{ env.IMAGE_TAG }} .
-          docker tag dataquad123/global-repo-dev:${{ env.IMAGE_TAG }} dataquad123/global-repo-prod:latest
+          docker build -t dataquad123/global-repo-prod:${{ env.IMAGE_TAG }} .
+          docker tag dataquad123/global-repo-prod:${{ env.IMAGE_TAG }} dataquad123/global-repo-prod:latest
 
       - name: Push Docker Image
         run: |
